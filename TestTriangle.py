@@ -35,13 +35,13 @@ class TestTriangles(unittest.TestCase):
         self.assertEqual(classifyTriangle(2,3,4),'Scalene','2,3,4 should be scalene')
 
     def testValidTriangles(self):
-        self.assertEqual(classifyTriangle(201,3,4),'InvalidInput','2,3,4 should be InvalidInput')
-        self.assertEqual(classifyTriangle(2,201,4),'InvalidInput','2,3,4 should be InvalidInput')
-        self.assertEqual(classifyTriangle(1,3,201),'InvalidInput','2,3,4 should be InvalidInput')
-        self.assertEqual(classifyTriangle(-1,3,4),'InvalidInput','2,3,4 should be InvalidInput')
-        self.assertEqual(classifyTriangle(2,-1,4),'InvalidInput','2,3,4 should be InvalidInput')
-        self.assertEqual(classifyTriangle(1,3,-1),'InvalidInput','2,3,4 should be InvalidInput')
-        self.assertEqual(classifyTriangle(1,1,2),'NotATriangle','2,3,4 should be NotATriangle')
+        self.assertEqual(classifyTriangle(201,3,4),'InvalidInput','201,3,4 should be InvalidInput')
+        self.assertEqual(classifyTriangle(2,201,4),'InvalidInput','2,201,4 should be InvalidInput')
+        self.assertEqual(classifyTriangle(1,3,201),'InvalidInput','1,3,201 should be InvalidInput')
+        self.assertEqual(classifyTriangle(-1,3,4),'InvalidInput','-1,3,4 should be InvalidInput')
+        self.assertEqual(classifyTriangle(2,-1,4),'InvalidInput','2,-1,4 should be InvalidInput')
+        self.assertEqual(classifyTriangle(1,3,-1),'InvalidInput','1,3,-1 should be InvalidInput')
+        self.assertEqual(classifyTriangle(1,1,2),'NotATriangle','1,1,2 should be NotATriangle')
 
 
 
